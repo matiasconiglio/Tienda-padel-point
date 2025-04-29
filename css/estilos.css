@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ESTILOS NAV BAR */
+
+.navbar img {
+  width: 150px;
+  height: 150px;
+}
+.navbar-footer-color {
+  background-color: #1a1a1a;
+}
+.navbar-nav .nav-link {
+  color: #f25c54;
+}
+.navbar-nav .nav-link:hover {
+  color: #f67777;
+}
+.tipe-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.navbar-toggler-icon {
+  background-color: #f25c54;
+  border-radius: 5px;
+}
+.navbar-toggler-icon:hover {
+  background-color: #f67777;
+  border-radius: 5px;
+}
+
+/* Fondo general del modal */
+.color-fondo {
+  background-color: #000000;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.color-texto {
+  color: #ad3636;
+  font-weight: 600;
+}
+
+/* Botón de cerrar */
+.btn-close {
+  background-color: #ff0606;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+/* Inputs */
+.form-control {
+  border: 2px solid #c0c0c0;
+  border-radius: 8px;
+  padding: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botón de envío */
+.btn-color-enviar {
+  background-color: #f25c54;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-color-enviar:hover {
+  background-color: #e63946;
+}
+
+/* Responsive y centrado */
+.modal-dialog {
+  max-width: 500px;
+}
+
+#carouselExample {
+  margin-top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tamanio img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.body {
+  padding-top: 176px;
+  background-color: #000;
+}
+
+.logo-footer {
+  max-width: 230px;
+}
+
+/*  Paginación  */
+
+.pagination .page-link {
+  background-color: #f25c54;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover,
+.pagination .page-link.active {
+  background-color: #e63946;
+}
+
+/*  Buscador */
+.form-control.color-busq {
+  background-color: #f25c54;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control.color-busq:focus {
+  background-color: #f25c54;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 0 5px 2px #e63946; /* opcional: brillo rojo sutil */
+}
+
+/* Botón de búsqueda */
+.btn.btn-primary.tipo-texto {
+  background-color: #f25c54;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary.tipo-texto:hover {
+  background-color: #e63946;
+  box-shadow: 0 4px 16px #ff1201;
+}
+
+/* navegación lateral  */
+.nav.flex-column .nav-link {
+  background-color: #1a1a1a;
+  color: #f25c54;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.nav.flex-column .nav-link:hover {
+  box-shadow: 0 4px 16px #ff1201;
+}
+
+/* Publicidad */
+img.rounded {
+  width: 100%;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+img.rounded:hover {
+  box-shadow: 0 4px 16px #ff1201;
+}
+
+/* css pagina aparte */
+
+.container {
+  background-color: #1a1a2e;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* estilos cards */
+.card {
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 16px #ff1201;
+}
+.card-title {
+  color: #eaeaea;
+}
+
+.card-text {
+  color: #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Botón "Ver más" */
+.card .btn {
+  background-color: #f25c54;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.tamanio-tarjetas {
+  width: 97vw;
+  height: auto;
+  padding: 10px;
+}
+
+.container-fluid {
+  background-color: #000;
+}
+
+/*  media queris */
+
+/* Celulares chicos (<576px) */
+@media (max-width: 575.98px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.85rem;
+  }
+  .navbar img {
+    width: 80px;
+    height: auto;
+  }
+  body {
+    padding-top: 100px;
+  }
+}
+
+/* Teléfonos grandes (>=576px y <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (>=768px y <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+  .navbar img {
+    width: 120px;
+  }
+}
+
+/* Laptops (>=992px y <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-title {
+    font-size: 1.3rem;
+  }
+  .card-text {
+    font-size: 1.05rem;
+  }
+}
+
+/* Pantallas grandes (>=1200px) */
+@media (min-width: 1200px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .card-text {
+    font-size: 1.1rem;
+  }
+}
+
+#carouselExample {
+  margin-top: 150px; /* por defecto para pantallas grandes */
+}
+
+/* Para celulares pequeños */
+@media (max-width: 575.98px) {
+  #carouselExample {
+    margin-top: 100px; /* se achica cuando el navbar es más chico */
+  }
+}
+
+/* Para tablets pequeñas */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #carouselExample {
+    margin-top: 130px;
+  }
+}
+
+/* ESTILOS PALETAS PAGINAS APARTE */
+
+.galeria-paleta {
+  background-color: #000000;
+  padding-bottom: 40px;
+}
+
+.galeria-paleta img {
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.galeria-paleta img:hover {
+  transform: scale(1.05);
+}
+
+.paleta-des p {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.paleta-des ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 10px;
+  border: #ffba89;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.container {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: #edfdfa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.comment-section {
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Estilos de los Comentarios Individuales */
+.comment-box {
+  background-color: #f25c54;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.comment-box h5 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Estilos de Formularios */
+
+.texto-formulario {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #edfdfa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* estilos de la pag contacto */
+.mainContacto {
+  margin-top: 90px;
+  padding-top: 40px;
+  height: 100%;
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  .btn {
+    background-color: #f25c54;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #e63946;
+    box-shadow: 0 4px 16px #ff1201;
+  }
+
+  .formContacto {
+    padding: 50px 55px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    label {
+      color: #edfdfa;
+    }
+    a {
+      color: #edfdfa;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      input {
+        border-radius: 12px;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: solid 0.2em #ffffff;
+    border-radius: 5%;
+  }
+
+  .titulo {
+    color: #f25c54;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+/* estilos pagina contacto */
+
+.estilo-img-personal {
+  max-width: 250px;
+  height: auto;
+}
+
+.color-personal {
+  color: #000000;
+}
+
+.parrafo {
+  font-size: 1.2rem;
+  color: #e63946;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-ajustado {
+  margin-top: 160px;
+}
+
+.titulo {
+  color: #e63946;
+}
+
+.mapa-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporción 16:9 */
+  height: 0%;
+  overflow: hidden;
+}
+
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* estilos pagina iniciar sesion */
+
+.main-iniciar-sesion {
+  min-height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.tamanio-iniciar-sesion {
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.imagen-iniciar-sesion img {
+  max-width: 552.8px;
+  height: auto;
+}
+
+.form-label {
+  color: white;
+}
+
+.titulo,
+h1,
+h2,
+h3,
+.btn,
+.card-title,
+.tipo-texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}

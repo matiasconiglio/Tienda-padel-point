@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matias Coniglio" />
+    <meta
+      name="description"
+      content="padel, paletas, pelotas de padel. cubregrips."
+    />
+    <meta
+      name="keywords"
+      content="ienda de pádel online,tienda de pádel barata,artículos de pádel,accesorios de pádel,material de pádel,equipamiento de pádel,productos para pádel"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Tienda padel point</title>
+  </head>
+  <body>
+    <!-- navbar y modal de resgitro -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-footer-color fs-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./img/logo1.png"
+              alt="Blog de Videojuegos"
+              class="logo-rotate img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item tipe-text">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link tipe-text"
+                  href="./paginas/sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tipe-text" href="paginas/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item tipe-text">
+                <a class="nav-link" href="./paginas/iniciar-sesion.html"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item tipe-text">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRegistro"
+                  >Registrarse</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="modalRegistro"
+        tabindex="-1"
+        aria-labelledby="modalRegistroLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content color-fondo">
+            <div class="modal-header">
+              <h5 class="modal-title color-texto" id="modalRegistroLabel">
+                Registrarse
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-color"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="registerForm">
+                <div class="mb-3 color-texto">
+                  <label for="name" class="form-label">Apellido y Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                    maxlength="50"
+                    minlength="10"
+                  />
+                </div>
+                <div class="mb-3 color-texto">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                    maxlength="40"
+                    minlength="10"
+                  />
+                </div>
+                <div class="mb-3 color-texto">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    required
+                    maxlength="30"
+                    minlength="8"
+                  />
+                </div>
+                <div class="mb-3 color-texto">
+                  <label for="confirmPassword" class="form-label"
+                    >Confirmar Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                    maxlength="30"
+                    minlength="8"
+                  />
+                </div>
+                <div class="form-check mb-3 color-texto">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="subscribe"
+                    name="subscribe"
+                    required
+                  />
+                  <label class="form-check-label" for="subscribe"
+                    >Deseo recibir notificaciones por email</label
+                  >
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn-color-enviar">
+                    Enviar Datos
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- carousel -->
+    <div id="carouselExample" class="carousel-slide">
+      <div class="carousel-inner">
+        <div class="carousel-item tamanio active">
+          <img
+            src="./img/carousel1.jpeg"
+            class="d-block w-100"
+            alt="imagen 1 de carousel"
+          />
+        </div>
+        <div class="carousel-item tamanio">
+          <img
+            src="./img/carousel2.jpg"
+            class="d-block w-100"
+            alt="imagen 2 del carousel"
+          />
+        </div>
+        <div class="carousel-item tamanio">
+          <img
+            src="./img/carousel3.jpg"
+            class="d-block w-100"
+            alt="imagen 3 del carousel"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- cards -->
+    <div class="container-fluid mt-2">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-9 col-sm-8">
+          <div class="row py-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./img/paleta1.jpg"
+                  class="card-img-top"
+                  alt="babolat paleta"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center color-texto-2 tipo-texto">
+                    Pala Babolat Juan Lebron Technical Viper 2025
+                  </h5>
+                  <p class="card-text color-texto-2 text-hidden tipo-texto-2">
+                    La Babolat Juan Lebron Technical Viper 2025 es la eleccion
+                    perfecta para jugadores exigentes que buscan potencia y
+                    precision en cada golpe. Disenada en colaboracion con el
+                    campeon Juan Lebron, esta pala incorpora tecnologia de
+                    ultima generacion para maximizar el rendimiento en la pista.
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="./Paginas/babolat.html"
+                      class="btn btn-primary px-5 tipo-texto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./img/paleta2.png"
+                  class="card-img-top"
+                  alt="paleta nox"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center color-texto-2 tipo-texto">
+                    Nox Agustin Tapia AT10 Genius LTD 2025
+                  </h5>
+                  <p class="card-text color-texto-2 text-hidden tipo-texto-2">
+                    Marco de 100% carbono: Ligera, resistente y duradera para un
+                    juego exigente. Núcleo MLD Black EVA y Carbon Fiber 18K:
+                    Tacto medio-rígido que asegura una excelente salida de bola.
+                    Forma de lágrima: Balance medio-alto ideal para el control
+                    en defensa y potencia en ataque.
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="./Paginas/nox.html"
+                      class="btn btn-primary px-5 tipo-texto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./img/paleta3.png"
+                  class="card-img-top"
+                  alt="paleta siux"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center color-texto-2 tipo-texto">
+                    Pala Siux Stupa Electra Pro ST4 2025
+                  </h5>
+                  <p class="card-text color-texto-2 text-hidden tipo-texto-2">
+                    Si quieres llevar la pala Siux del jugador profesional
+                    Franco Stupa, la Electra ST4 te va a encantar. Fabricada con
+                    materiales de alta calidad, con marco y planos de carbono,
+                    para una mayor resistencia y durabilidad.
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="./Paginas/siux.html"
+                      class="btn btn-primary px-5 tipo-texto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./img/paleta4.png"
+                  class="card-img-top"
+                  alt="paleta head"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center color-texto-2 tipo-texto">
+                    Pala Head Coello Pro 2025
+                  </h5>
+                  <p class="card-text color-texto-2 text-hidden tipo-texto-2">
+                    La Head Coello Pro 2025 es la pala perfecta para jugadores
+                    de ataque que buscan potencia, precisión y efectos
+                    inigualables. Con forma de diamante, núcleo Power Foam y
+                    tecnología Extreme Spin, te ofrece un rendimiento explosivo
+                    en cada golpe
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="./Paginas/head.htm"
+                      class="btn btn-primary px-5 tipo-texto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./img/paleta5.png"
+                  class="card-img-top"
+                  alt="paleta wilson"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center color-texto-2 tipo-texto">
+                    Pala Wilson Defy Pro V1
+                  </h5>
+                  <p class="card-text color-texto-2 text-hidden tipo-texto-2">
+                    La Wilson Defy Pro V1 2025 es una pala de pádel diseñada
+                    para jugadores ofensivos que buscan potencia y control
+                    excepcionales. Su estructura en forma de diamante y la cara
+                    de carbono 15K brindan una sensación sólida y estable,
+                    optimizando cada golpe
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="./Paginas/wilson.html"
+                      class="btn btn-primary px-5 tipo-texto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="./img/paleta6.png"
+                  class="card-img-top"
+                  alt="paleta royal"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center color-texto-2 tipo-texto">
+                    Pala Royal Padel R-Fury 2025
+                  </h5>
+                  <p class="card-text color-texto-2 text-hidden tipo-texto-2">
+                    La Pala Royal Padel R Fury 2025 es sinónimo de potencia,
+                    precisión y tecnología avanzada. Diseñada para jugadores
+                    exigentes que buscan dominar cada partido, esta pala combina
+                    materiales de alta calidad con un diseño innovador que no
+                    pasará desapercibido en la pista. Con la Pala Royal Padel R
+                    Fury 2025, podrás alcanzar tu máximo potencial en cada
+                    golpe.
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="./Paginas/royal.html"
+                      class="btn btn-primary px-5 tipo-texto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu de navegacion -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center">
+              <li class="page-item">
+                <a
+                  class="page-link active color-paginac tipo-texto"
+                  href="./index.html"
+                  >1</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link color-paginac tipo-texto"
+                  href="./paginas/error404.html"
+                  >2</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link color-paginac tipo-texto"
+                  href="./paginas/error404.html"
+                  >3</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link color-paginac tipo-texto"
+                  href="./paginas/error404.html"
+                  aria-label="Next"
+                >
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3 col-sm-4 py-4">
+          <div class="text-center col-12">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 color-busq"
+                type="search"
+                placeholder="Búsqueda"
+                aria-label="Search"
+                maxlength="40"
+                minlength="3"
+              />
+            </form>
+          </div>
+
+          <div class="mt-4 text-center">
+            <button class="btn btn-primary col-10 tipo-texto" type="submit">
+              Búsqueda
+            </button>
+          </div>
+
+          <ul class="nav flex-column mt-5 text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                aria-current="page"
+                href="paginas/error404.html"
+                >indumentaria</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                href="./paginas/error404.html"
+                >paletas nivel avanzado</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                href="./paginas/error404.html"
+                >paletas nivel intermedio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                href="./paginas/error404.html"
+                >paletas nivel principiante</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                href="./paginas/error404.html"
+                >zapatillas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                href="./paginas/error404.html"
+                >pelotas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 tipo-texto-2"
+                href="./paginas/error404.html"
+              >accesorios</a>
+            </li>
+            
+
+          <div class="mt-5 text-center d-none d-sm-block">
+            <img
+              src="./img/gif_franco.gif"
+              alt="Publicidad Playstation"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="navbar-footer-color container-fluid text-center">
+      <section
+        class="row d-flex justify-content-between align-items-center p-5"
+      >
+        <a
+          class="col-12 col-md-4 col-lg-4 navbar-brand logo-footer mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start"
+          href="./index.html"
+        >
+          <img
+            src="img/logo1.png"
+            alt="Blog videojuegos"
+            class="logo-rotate img-fluid"
+          />
+        </a>
+
+        <ul
+          class="navbar-nav col-12 col-md-4 col-lg-4 d-flex justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-facebook facebook-icon"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-instagram instagram-icon"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-twitter twitter-icon"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-youtube youtube-icon"></i> YouTube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.discord.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-discord discord-icon"></i> Discord</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav col-12 col-md-4 col-lg-4">
+          <li>
+            <a href="./paginas/error404.html" class="nav-link tipe-text fs-5"
+              >Política de Privacidad</a
+            >
+          </li>
+          <li>
+            <a href="./paginas/error404.html" class="nav-link tipe-text fs-5"
+              >Términos de Servicio</a
+            >
+          </li>
+          <li>
+            <a href="./paginas/error404.html" class="nav-link tipe-text fs-5"
+              >Cookies y Publicidad</a
+            >
+          </li>
+          <li>
+            <a
+              href="./paginas/error404.html"
+              class="nav-link my-active tipe-text fs-5"
+              >Aviso Legal</a
+            >
+          </li>
+        </ul>
+        <div class="text-center py-3">
+          <p class="text-white tipe-text mb-0">
+            © 2025 Todos los derechos reservados
+          </p>
+        </div>
+      </section>
+    </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

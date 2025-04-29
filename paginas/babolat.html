@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matias Coniglio" />
+    <meta
+      name="description"
+      content="padel, paletas, pelotas de padel. cubregrips."
+    />
+    <meta
+      name="keywords"
+      content="ienda de pádel online,tienda de pádel barata,artículos de pádel,accesorios de pádel,material de pádel,equipamiento de pádel,productos para pádel"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <title>Tienda padel point</title>
+  </head>
+  <body>
+    <!-- navbar y modal de resgitro -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-footer-color fs-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../img/logo1.png"
+              alt="Blog de Videojuegos"
+              class="logo-rotate img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item tipe-text">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link tipe-text"
+                  href="../paginas/sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tipe-text" href="../paginas/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item tipe-text">
+                <a class="nav-link" href="../paginas/iniciar-sesion.html"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item tipe-text">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRegistro"
+                  >Registrarse</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="modalRegistro"
+        tabindex="-1"
+        aria-labelledby="modalRegistroLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content color-fondo">
+            <div class="modal-header">
+              <h5 class="modal-title color-texto" id="modalRegistroLabel">
+                Registrarse
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-color"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="registerForm">
+                <div class="mb-3 color-texto">
+                  <label for="name" class="form-label">Apellido y Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                    maxlength="50"
+                    minlength="10"
+                  />
+                </div>
+                <div class="mb-3 color-texto">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                    maxlength="40"
+                    minlength="10"
+                  />
+                </div>
+                <div class="mb-3 color-texto">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    required
+                    maxlength="30"
+                    minlength="8"
+                  />
+                </div>
+                <div class="mb-3 color-texto">
+                  <label for="confirmPassword" class="form-label"
+                    >Confirmar Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                    maxlength="30"
+                    minlength="8"
+                  />
+                </div>
+                <div class="form-check mb-3 color-texto">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="subscribe"
+                    name="subscribe"
+                    required
+                  />
+                  <label class="form-check-label" for="subscribe"
+                    >Deseo recibir notificaciones por email</label
+                  >
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn-color-enviar">
+                    Enviar Datos
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article style="padding-top: 100px;">
+  <div class="container mt-5 pt-5 galeria-paleta">
+    <h1 class="text-center mb-4">Babolat Technical Viper 2025</h1>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="../img/paleta1.jpg" class="img-fluid rounded shadow-sm" alt="Paleta vista frontal">
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="../img/paleta11.png" class="img-fluid rounded shadow-sm" alt="Paleta vista lateral">
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="../img/paleta111.png" class="img-fluid rounded shadow-sm" alt="Detalle del mango">
+      </div>
+    </div>
+  </div>
+</article >
+
+        <!-- Descripción del juego -->
+        <section class=" paleta-des text-center mt-5">
+          <p>
+            Ya está disponible la pala Babolat Technical Viper, de alta gama, desarrollada específicamente para jugadores avanzados y profesionales. Diseñada en colaboración con el campeón Juan Lebrón, esta pala destaca por su combinación perfecta de potencia y control, permitiendo a los jugadores más exigentes dominar la pista con cada golpe.
+
+            Esta preciosa pala es ideal para quienes buscan un rendimiento excepcional en cada partido, ya sea en competiciones de alto nivel o en entrenamientos intensos.
+
+            Equipada con un núcleo de goma Eva y un marco de carbono 12K, la Technical Viper ofrece una respuesta rápida y potente en cada golpe. Su forma de diamante optimiza la salida de bola, brindando mayor control en los tiros más exigentes.
+          </p>
+          
+          <h5 class="mt-4">propiedades</h5>
+          <ul>
+            <li><strong>Forma:</strong> diamante</li>
+            <li><strong>Perfil de marco:</strong> 38mm</li>
+            <li><strong>Peso:</strong> 370 gramos +/- 10 g</li>
+            <li><strong>Marco:</strong> carbono</li>
+            <li><strong>Superficie:</strong> carbono 12k</li>
+            <li><strong>Nucleo:</strong> Goma EVA</li>
+            <li><strong>Acabado:</strong> rugoso, efecto arena</li>
+          </ul>
+        </section>
+
+        <!-- Video -->
+        <div class="video-container text-center mt-5">
+          <iframe 
+          width="1250" 
+          height="703" 
+          src="https://www.youtube.com/embed/CuQmo8ixjc8" 
+          title="Colección Babolat 2025 🔥 Technical Viper 2025 🔥 La nueva pala de pádel de Juan Lebrón" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+        </div> 
+
+        <!-- Formulario de comentarios -->
+        <div class="bg-dark comment-section mt-5 p-4">
+          <h3>Deja tu comentario</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nombre" class="texto-formulario">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                required
+                maxlength="50"
+                minlength="30"
+              />
+            </div>
+            <div class="form-group">
+              <label for="comentario" class="texto-formulario"
+                >Comentario:</label
+              >
+              <textarea
+                class="form-control"
+                id="comentario"
+                rows="4"
+                placeholder="Escribe tu comentario"
+                required
+                maxlength="350"
+                minlength="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-color-blog">
+              Enviar comentario
+            </button>
+          </form>
+        </div>
+
+        <!-- Visualización de comentarios -->
+        <div class="comment-section mt-5 bg-dark">
+          <h3>Comentarios recientes</h3>
+          <div class="comment-box">
+            <h5>facundo</h5>
+            <p>muy contento con la paleta, me sirvio mucho para mejorar mi remate</p>
+          </div>
+          <div class="comment-box">
+            <h5>tobias</h5>
+            <p>no me gusto la paleta, porque tiene poco contro</p>
+          </div>
+          <div class="comment-box">
+            <h5>matias</h5>
+            <p>paleta ideal para gente con agresividad en su juego</p>
+          </div>
+          <div class="comment-box">
+            <h5>esteban</h5>
+            <p>me encanto el acabado rugoso para poder hacer dejadas</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- footer -->
+    <footer class="navbar-footer-color container-fluid text-center">
+      <section
+        class="row d-flex justify-content-between align-items-center p-5"
+      >
+        <a
+          class="col-12 col-md-4 col-lg-4 navbar-brand logo-footer mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start"
+          href="./index.html"
+        >
+          <img
+            src="../img/logo1.png"
+            alt="venta de paetas"
+            class="logo-rotate img-fluid"
+          />
+        </a>
+
+        <ul
+          class="navbar-nav col-12 col-md-4 col-lg-4 d-flex justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-facebook facebook-icon"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-instagram instagram-icon"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-twitter twitter-icon"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-youtube youtube-icon"></i> YouTube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.discord.com"
+              target="_blank"
+              class="nav-link tipe-text fs-5"
+              ><i class="bi bi-discord discord-icon"></i> Discord</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav col-12 col-md-4 col-lg-4">
+          <li>
+            <a href="./paginas/error404.html" class="nav-link tipe-text fs-5"
+              >Política de Privacidad</a
+            >
+          </li>
+          <li>
+            <a href="./paginas/error404.html" class="nav-link tipe-text fs-5"
+              >Términos de Servicio</a
+            >
+          </li>
+          <li>
+            <a href="./paginas/error404.html" class="nav-link tipe-text fs-5"
+              >Cookies y Publicidad</a
+            >
+          </li>
+          <li>
+            <a
+              href="./paginas/error404.html"
+              class="nav-link my-active tipe-text fs-5"
+              >Aviso Legal</a
+            >
+          </li>
+        </ul>
+        <div class="text-center py-3">
+          <p class="text-white tipe-text mb-0">
+            © 2025 Todos los derechos reservados
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
