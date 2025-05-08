@@ -15,7 +15,6 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
@@ -39,9 +38,6 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -82,6 +78,8 @@
           </div>
         </div>
       </nav>
+
+      <!-- Modal de registro -->
       <div
         class="modal fade"
         id="modalRegistro"
@@ -177,65 +175,147 @@
         </div>
       </div>
     </header>
-  </body>
-</html>
-        <main class="main-iniciar-sesion d-flex justify-content-evenly">      
-          <div class="card tamanio-iniciar-sesion">
-            <div class="card-body">
-              <h5 class="card-title text-center color-texto-inicio-sesion tipo-texto-1 pt-3">Inicio de Sesión</h5>
+
+    <!-- Main corregido correctamente dentro del <body> -->
+    <main class="main-iniciar-sesion py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-4">
+          <!-- Formulario -->
+          <div class="col-12 col-lg-6">
+            <div class="card tamanio-iniciar-sesion">
+              <div class="card-body">
+                <h5
+                  class="card-title text-center color-texto-inicio-sesion tipo-texto-1 pt-3"
+                >
+                  Inicio de Sesión
+                </h5>
                 <form>
+                  <!-- campos email y pass -->
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label color-texto-inicio-sesion tipo-texto-2">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="50" minlength="15" placeholder="nombreapellido@gmail.com">                    
+                    <label
+                      for="exampleInputEmail1"
+                      class="form-label color-texto-inicio-sesion tipo-texto-2"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      required
+                      maxlength="50"
+                      minlength="15"
+                      placeholder="correoelectronico@gmail.com"
+                    />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label color-texto-inicio-sesion tipo-texto-2">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required maxlength="50" minlength="8" placeholder="contraseña1234">
-                  </div>                  
-                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                    <label
+                      for="exampleInputPassword1"
+                      class="form-label color-texto-inicio-sesion tipo-texto-2"
+                      >Contraseña</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      required
+                      maxlength="50"
+                      minlength="8"
+                      placeholder="contraseña"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-color-enviar">
+                    Ingresar
+                  </button>
                   <div class="mt-3 mb-3">
-                    <button type="submit" class="btn btn-facebook">Ingresar con Facebook</button>
+                    <button type="submit" class="btn btn-redes">
+                      Ingresar con Facebook
+                    </button>
                   </div>
                   <div class="mt-3 mb-3">
-                    <button type="submit" class="btn btn-google">Ingresar con Google</button>
+                    <button type="submit" class="btn btn-redes">
+                      Ingresar con Google
+                    </button>
                   </div>
-                  <h5 class="card-title text-center color-texto-inicio-sesion tipo-texto-2">Si olvidaste tu contraseña haz click:                        
-                  
-                  <button type="button" class="btn btn-aqui-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">aquí</button>                     
-                </form>  
-                  
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content color-fondo">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5 color-texto" id="exampleModalLabel">Recuperación de contraseña</h1>
-                          <button type="button" class="btn-close btn-color" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail" class="form-label color-texto">Email</label>
-                              <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required maxlength="50" minlength="15" placeholder="nombreapellido@gmail.com">
-                              <div id="emailHelp" class="form-text color-texto mt-3">Te enviaremos un código de recuperación a tu mail</div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                              <button type="submit" class="btn btn-color-2">
-                                Pedir código
-                              </button>
-                            </div>                       
-                          </form>
-                        </div>                              
-                      </div>
-                    </div>
-                  </div></h5>            
-            </div>           
-          </div>         
-          <div class="card imagen-iniciar-sesion">
-            <img src="../img/logo1.png" class="card-img-top" alt="logo">
+                  <h5
+                    class="card-title text-center color-texto-inicio-sesion tipo-texto-2"
+                  >
+                    Si olvidaste tu contraseña haz click:
+                    <button
+                      type="button"
+                      class="btn btn-redes"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      aquí
+                    </button>
+                  </h5>
+                </form>
+              </div>
+            </div>
           </div>
-    </main> 
 
+          <!-- Imagen -->
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
+            <div class="card imagen-iniciar-sesion">
+              <img src="../img/logo1.png" class="card-img-top" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Modal recuperación -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content color-fondo">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 color-texto" id="exampleModalLabel">
+                Recuperación de contraseña
+              </h1>
+              <button
+                type="button"
+                class="btn-close btn-color"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label color-texto"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail"
+                    required
+                    maxlength="50"
+                    minlength="15"
+                    placeholder="nombreapellido@gmail.com"
+                  />
+                  <div id="emailHelp" class="form-text color-texto mt-3">
+                    Te enviaremos un código de recuperación a tu mail
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-color-2">
+                    Pedir código
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
     <footer class="navbar-footer-color container-fluid text-center">
       <section
         class="row d-flex justify-content-between align-items-center p-5"
@@ -250,7 +330,6 @@
             class="logo-rotate img-fluid"
           />
         </a>
-
         <ul
           class="navbar-nav col-12 col-md-4 col-lg-4 d-flex justify-content-center"
         >
@@ -326,6 +405,7 @@
         </div>
       </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
