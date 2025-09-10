@@ -1,6 +1,4 @@
-/* ========================
-   IMPORT DE FUENTES Y RESET
-======================== */
+/* IMPORT DE FUENTES Y RESET */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap");
 
 * {
@@ -9,9 +7,7 @@
   box-sizing: border-box;
 }
 
-/* ========================
-   CLASES GENERALES UNIFICADAS
-======================== */
+/* CLASES GENERALES UNIFICADAS */
 .btn-color-enviar,
 .btn-color-2,
 .btn-redes,
@@ -57,16 +53,19 @@ h3,
   font-weight: 600;
 }
 
-/* ========================
-   NAVBAR
-======================== */
+/* NAVBAR */
 .navbar img {
   width: 150px;
   height: 150px;
 }
 
 .navbar-footer-color {
-  background-color: #1a1a1a;
+  background-color: #2a2a2a;
+}
+
+.navbar .container,
+.navbar .container-fluid {
+  background-color: #2a2a2a !important;
 }
 
 .navbar-nav .nav-link {
@@ -92,9 +91,12 @@ h3,
   background-color: #f67777;
 }
 
-/* ========================
-   MODAL
-======================== */
+header .container-fluid {
+  padding: 0;
+  border-radius: 0;
+}
+
+/* MODAL */
 .color-fondo {
   background-color: #000;
   border-radius: 15px;
@@ -120,9 +122,7 @@ h3,
   max-width: 500px;
 }
 
-/* ========================
-   FORMULARIOS
-======================== */
+/* FORMULARIOS */
 .form-control,
 .form-label {
   color: white;
@@ -150,18 +150,14 @@ h3,
   box-shadow: 0 0 5px 2px #e63946;
 }
 
-/* ========================
-   CARRUSEL
-======================== */
+/* CARRUSEL */
 #carouselExample {
   margin-top: 0;
   width: 100%;
   overflow: hidden;
 }
 
-/* ========================
-   IMÁGENES Y MULTIMEDIA
-======================== */
+/* IMÁGENES Y MULTIMEDIA */
 .tamanio img {
   width: 100%;
   height: auto;
@@ -200,9 +196,7 @@ img.rounded:hover {
   box-shadow: 0 4px 16px #ff1201;
 }
 
-/* ========================
-   CONTENEDORES Y SECCIONES
-======================== */
+/* CONTENEDORES Y SECCIONES */
 .container,
 .container-fluid {
   padding: 30px;
@@ -225,9 +219,7 @@ img.rounded:hover {
   padding-top: 150px;
 }
 
-/* ========================
-   PÁGINAS ESPECIALES Y GALERÍA
-======================== */
+/* PÁGINAS ESPECIALES Y GALERÍA */
 .galeria-paleta {
   padding-bottom: 40px;
 }
@@ -279,9 +271,7 @@ img.rounded:hover {
   object-fit: contain;
 }
 
-/* ========================
-   CARDS
-======================== */
+/* CARDS */
 .card {
   background-color: #2a2a2a;
   border-radius: 15px;
@@ -321,9 +311,7 @@ img.rounded:hover {
   padding: 10px;
 }
 
-/* ========================
-   PAGINACIÓN Y NAVEGACIÓN LATERAL
-======================== */
+/* PAGINACIÓN Y NAVEGACIÓN LATERAL */
 .pagination .page-link {
   background-color: #f25c54;
   color: #fff;
@@ -354,9 +342,7 @@ img.rounded:hover {
   box-shadow: 0 4px 16px #ff1201;
 }
 
-/* ========================
-   TEXTOS Y ENCABEZADOS
-======================== */
+/* TEXTOS Y ENCABEZADOS */
 body {
   font-family: "Poppins", sans-serif;
   padding-top: 100px;
@@ -392,9 +378,7 @@ h3 {
   color: #000;
 }
 
-/* ========================
-   SECCIÓN DE COMENTARIOS
-======================== */
+/* SECCIÓN DE COMENTARIOS */
 .comment-section {
   padding: 20px;
   margin-top: 30px;
@@ -425,9 +409,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* ========================
-   UTILIDADES
-======================== */
+/* UTILIDADES */
 .mt-4 {
   margin-top: 1.5rem;
 }
@@ -444,9 +426,7 @@ h3 {
   margin-bottom: 3rem;
 }
 
-/* ========================
-   MEDIA QUERIES
-======================== */
+/* MEDIA QUERIES */
 @media (min-width: 768px) {
   .card-title {
     font-size: 1.3rem;
@@ -487,4 +467,33 @@ h3 {
   #carouselExample {
     margin-top: 100px;
   }
+}
+
+/* FOOTER */
+
+footer.navbar-footer-color {
+  padding: 0 !important;
+}
+
+footer.navbar-footer-color > section {
+  padding: 0.75rem 1rem !important;
+}
+
+footer .logo-footer img {
+  max-height: 150px;
+  height: auto;
+}
+
+footer .logo-footer {
+  margin-bottom: 0 !important;
+}
+
+footer .navbar-nav .nav-link {
+  padding: 0.25rem 0.5rem;
+  line-height: 1.2;
+}
+
+footer .text-center.py-3 {
+  padding: 0.25rem 0 !important;
+  font-size: 0.85rem;
 }
