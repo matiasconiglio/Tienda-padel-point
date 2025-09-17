@@ -342,6 +342,11 @@ img.rounded:hover {
   box-shadow: 0 4px 16px #ff1201;
 }
 
+.publicidad-gif {
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+}
 /* TEXTOS Y ENCABEZADOS */
 body {
   font-family: "Poppins", sans-serif;
